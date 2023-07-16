@@ -31,7 +31,8 @@ jobs:
           # choose node.js version to use
           node-version: 18
 #          # cache deps for pnpm
-#          cache: pnpm
+          cache: npm
+      - run: npm ci
 
       # run build script
       - name: Build VuePress site
