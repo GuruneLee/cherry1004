@@ -16,7 +16,7 @@ CTMS 에선 queryString 을 변경하는 총 몇 가지 루트가 존재한다. 
 
 **[ menu privilege 설정 버그 ]**  
 CTMS 에선 각 메뉴에 진입할 때 마다 privilege 정보를 가져온다. 하지만, 가져온 privilege 정보가 반영되지 않고 '이전 정보'를 참조하고 있음을 발견하였다. 소스코드를 되짚어보니, 비동기로 세팅된정보를 Component 에서 tracking 하지 않아 생기는 문제였다.
-- [menu privilege 설정 버그]
+- [menu privilege 설정 버그]()
 해당 버그가 발견된 페이지에서 Vue 의 composable API 를 이용해 불러온 권한을 트래킹 할 수 있게 수정하였다.
 
 **[ 프로젝트 스크럼 진행 제안 (7월) ]**  
