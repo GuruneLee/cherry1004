@@ -12,7 +12,7 @@
 **[ Query String 업데이트 버그 ]**  
 CTMS 에선 queryString 을 변경하는 총 몇 가지 루트가 존재한다. 다만 이 변경 과정 중, URLSearchParams 와 decodeURI 를 혼용하여 사용하고, null 값 등 예외케이스가 존재한다. TC 진행 중 space, %, null 등 특수문자와 관련하여 처리하지 못한 엣지케이스가 다수 등장하였다.  
 이를 수정하기 위해 소스코드 기반 Flow chart 를 짜서 발견된 엣지 케이스를 한 번에 처리할 수 있는 로직으로 수정 하였고, 잘못 적용된 로직을 걷어내는 등의 작업을 진행하였다.
-- [query string 업데이트 버그 수정](../../docs/%EA%B0%9C%EB%B0%9C%20%EA%B2%BD%ED%97%98/queryString%20%EC%9A%94%EC%B2%AD%20%EC%97%90%EB%9F%AC%20%EC%88%98%EC%A0%95.md)
+- [query string 업데이트 버그 수정](../%EA%B0%9C%EB%B0%9C%20%EA%B2%BD%ED%97%98/queryString%20%EC%9A%94%EC%B2%AD%20%EC%97%90%EB%9F%AC%20%EC%88%98%EC%A0%95.md)
 
 **[ menu privilege 설정 버그 ]**  
 CTMS 에선 각 메뉴에 진입할 때 마다 privilege 정보를 가져온다. 하지만, 가져온 privilege 정보가 반영되지 않고 '이전 정보'를 참조하고 있음을 발견하였다. 소스코드를 되짚어보니, 비동기로 세팅된정보를 Component 에서 tracking 하지 않아 생기는 문제였다.
