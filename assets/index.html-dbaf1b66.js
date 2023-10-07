@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8daa1a0e","path":"/","title":"Cherry1004 Daily Shovels","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"Home","slug":"home","link":"#home","children":[]}],"git":{"updatedTime":1692883772000,"contributors":[{"name":"gurunelee","email":"dlckdgk4858@gmail.com","commits":3}]},"filePathRelative":"README.md"}');export{e as data};
